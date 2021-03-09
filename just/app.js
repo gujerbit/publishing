@@ -52,4 +52,18 @@ window.onload = function() {
         notice_tbl.hide();
         gallery_img.show();
     });
+
+    let notice_title = $('#notice_title');
+    let popup = $('.popup');
+    let popup_btn = $('.popup > button');
+
+    popup.hide();
+
+    notice_title.on('click', function() {
+        popup.show();
+    });
+
+    popup_btn.on('click', function() {
+        popup.hide();
+    });
 }
