@@ -236,3 +236,7 @@ footer {
 #banner > div > p {
     text-align: center;
 }
+
+#footer_logo img {
+    filter: grayscale();
+}
