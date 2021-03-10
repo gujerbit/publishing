@@ -3,6 +3,7 @@ window.onload = function() {
     let bottom = $('.top > li > ul');
     
     bottom.hide();
+    
     top.hover(function() {
         bottom.stop().slideDown(300);
     }, function() {
