@@ -17,9 +17,12 @@ window.onload = function() {
     });
 
     let slider = $('#slider > img');
+
     slider.eq(1).animate({top: '300px'}, 0);
     slider.eq(2).animate({top: '600px'}, 0);
+
     let idx = 0;
+
     setInterval(function() {
         for(let i = 0; i < 3; i++) {
             let temp = slider.eq(i).css('top');
@@ -47,6 +50,7 @@ window.onload = function() {
         notice_tbl.show();
         gallery_img.hide();
     });
+    
     gallery_btn.on('click', function() {
         gallery_btn.css('background-color', '#fff');
         notice_btn.css('background-color', '#ccc');
